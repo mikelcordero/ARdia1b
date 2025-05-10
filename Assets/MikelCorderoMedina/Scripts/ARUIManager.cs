@@ -14,12 +14,13 @@ public class ARUIManager : MonoBehaviour
 
     public GameObject[] prefabOpciones;
     private int prefabSeleccionado = 0;
-    private List<GameObject> instancias = new List<GameObject>();
+
+    private GameObject instanciaActual; // ✅ Guardamos solo una instancia
 
     void Start()
     {
         // Eventos
-        borrarButton.onClick.AddListener(BorrarInstancias);
+        borrarButton.onClick.AddListener(BorrarInstancia);
         prefabDropdown.onValueChanged.AddListener(CambiarPrefabSeleccionado);
 
         // Rellenar combo si está vacío
@@ -45,17 +46,23 @@ public class ARUIManager : MonoBehaviour
 
     public void InstanciarPrefab(Vector3 posicion)
     {
-        GameObject nuevo = Instantiate(prefabOpciones[prefabSeleccionado], posicion, Quaternion.identity);
-        instancias.Add(nuevo);
+        // ✅ Si ya hay uno, lo eliminamos
+        if (instanciaActual != null)
+        {
+            Destroy(instanciaActual);
+        }
+
+        // ✅ Instanciamos nuevo y lo guardamos como actual
+        instanciaActual = Instantiate(prefabOpciones[prefabSeleccionado], posicion, Quaternion.identity);
     }
 
-    void BorrarInstancias()
+    void BorrarInstancia()
     {
-        foreach (GameObject obj in instancias)
+        if (instanciaActual != null)
         {
-            Destroy(obj);
+            Destroy(instanciaActual);
+            instanciaActual = null;
         }
-        instancias.Clear();
     }
 
     void CambiarPrefabSeleccionado(int index)

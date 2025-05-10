@@ -875,7 +875,7 @@ RectTransform:
   m_GameObject: {fileID: 1353717588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.20035, y: 1.9951451, z: 1}
+  m_LocalScale: {x: 2.3457932, y: 2.0919094, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1464075348}
@@ -883,7 +883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.9, y: -1128.4}
+  m_AnchoredPosition: {x: -320.94, y: -1128.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353717590
@@ -1148,11 +1148,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: Gris
       m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: verde
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1167,7 +1165,7 @@ RectTransform:
   m_GameObject: {fileID: 1459013461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2501, y: 1.1414, z: 1}
+  m_LocalScale: {x: 1.9086295, y: 2.69089, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1678905407}
@@ -1177,7 +1175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 362, y: -1134}
+  m_AnchoredPosition: {x: 362, y: -1111}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459013464
@@ -1614,7 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac5512a17350464882d1b7f04535389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlacedPrefab: {fileID: 5728978940963630806, guid: 2bc687460ecd44b65a66b57196cc164c, type: 3}
+  uiManager: {fileID: 1366618703}
 --- !u!114 &1573299115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,7 +1888,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: Gris
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
