@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 public class ZonaDeTransicion : MonoBehaviour
 {
     public int escenaDestino;
-    public GameObject uiCanvas; // UI que se muestra al entrar
+    public GameObject uiCanvas;
 
     void Start()
     {
-        uiCanvas.SetActive(false); // Ocultamos la UI al principio
+        uiCanvas.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,6 +29,7 @@ public class ZonaDeTransicion : MonoBehaviour
 
     public void IrAEscena()
     {
+        Debug.Log("Botón pulsado. Cambio de escena...");
         SceneManager.LoadScene(escenaDestino);
     }
 }
