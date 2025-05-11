@@ -1,18 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class VolverEscena0 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void VolverAlMenu()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene(0); // Asegúrate de que Escena 0 esté en el Build Settings
     }
 }
