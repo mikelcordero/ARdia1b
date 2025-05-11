@@ -4,7 +4,7 @@ public class ZonaSpawner : MonoBehaviour
 {
     public GameObject portal1;
     public GameObject portal2;
-    public float distancia = 2f;
+    public float distancia = 0.5f;
     public float separacion = 1.5f;
 
     void Start()
